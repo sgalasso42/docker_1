@@ -1,0 +1,2 @@
+export MACHINE_STORAGE_PATH=/goinfre/
+docker-machine create --driver virtualbox Char
