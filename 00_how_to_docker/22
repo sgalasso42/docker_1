@@ -1,0 +1,5 @@
+eval $(docker-machine env Char)
+TOK=$(docker swarm join-token -q worker)
+eval $(docker-machine env Aiur)
+docker swarm join --token $TOK $(docker-machine ip Char):2377
+eval $(docker-machine env Char)
