@@ -14,5 +14,5 @@ RUN		echo 'eula=true' > eula.txt
 ## RUN
 ENTRYPOINT java -Xmx1024M -Xms1024M -jar server.jar
 
-# docker run build -t minecraft_serv .
+# docker build -t minecraft_serv .
 # docker run -p 12345:25565 -d minecraft_serv
